@@ -10,6 +10,7 @@ use Mix.Config
 # Configures the endpoint
 config :pricefinder, PricefinderWeb.Endpoint,
   url: [host: "localhost"],
+  http: [port: 4000],
   secret_key_base: "i+alUyujf0y4RQ6A7kPCkmUnGe2esNzZ62Jlpge5Ld/5YvU1aZLke53cmIS5kRml",
   render_errors: [view: PricefinderWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: Pricefinder.PubSub,
