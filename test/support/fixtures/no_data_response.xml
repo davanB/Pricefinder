@@ -1,0 +1,9 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AirShoppingRS xmlns="http://www.iata.org/IATA/EDIST" Version="16.1">
+            <Errors>
+                <Error ShortText="System Temporarily unavailable" Code="304">NDC_PAVL_9004 - We do not offer availability for this route</Error>
+            </Errors>
+        </AirShoppingRS>
+    </soap:Body>
+</soap:Envelope>
