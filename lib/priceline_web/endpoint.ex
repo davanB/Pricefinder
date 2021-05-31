@@ -1,4 +1,4 @@
-defmodule PricelineWeb.Endpoint do
+defmodule PricefinderWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :pricefinder
 
   # The session will be stored in the cookie and signed,
@@ -10,7 +10,7 @@ defmodule PricelineWeb.Endpoint do
     signing_salt: "CASB2dxQ"
   ]
 
-  socket "/socket", PricelineWeb.UserSocket,
+  socket "/socket", PricefinderWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -41,5 +41,5 @@ defmodule PricelineWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug PricelineWeb.Router
+  plug PricefinderWeb.Router
 end

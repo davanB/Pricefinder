@@ -8,11 +8,11 @@ defmodule Pricefinder.Application do
   def start(_type, _args) do
     children = [
       # Start the Telemetry supervisor
-      PricelineWeb.Telemetry,
+      PricefinderWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: Pricefinder.PubSub},
       # Start the Endpoint (http/https)
-      PricelineWeb.Endpoint,
+      PricefinderWeb.Endpoint,
       # Start a worker by calling: Pricefinder.Worker.start_link(arg)
       # {Pricefinder.Worker, arg}
       {Task.Supervisor, name: OfferRetrieverSupervisor}
@@ -27,7 +27,7 @@ defmodule Pricefinder.Application do
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    PricelineWeb.Endpoint.config_change(changed, removed)
+    PricefinderWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end

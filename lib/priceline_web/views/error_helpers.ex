@@ -1,4 +1,4 @@
-defmodule PricelineWeb.ErrorHelpers do
+defmodule PricefinderWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -44,9 +44,9 @@ defmodule PricelineWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(PricelineWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(PricefinderWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(PricelineWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(PricefinderWeb.Gettext, "errors", msg, opts)
     end
   end
 end

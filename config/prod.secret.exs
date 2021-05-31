@@ -6,7 +6,7 @@ use Mix.Config
 
 secret_key_base = "+crKFyiJvlcufhAPf4MBtajmw4HvGmrHgsQLdGNWcMNGn3OlfGknJkFqkfNmmnoj"
 
-config :pricefinder, PricelineWeb.Endpoint,
+config :pricefinder, PricefinderWeb.Endpoint,
   http: [
     port: String.to_integer(System.get_env("PORT") || "4000"),
     transport_options: [socket_opts: [:inet6]]
@@ -18,7 +18,7 @@ config :pricefinder, PricelineWeb.Endpoint,
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start each relevant endpoint:
 #
-#     config :pricefinder, PricelineWeb.Endpoint, server: true
+#     config :pricefinder, PricefinderWeb.Endpoint, server: true
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.

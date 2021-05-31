@@ -1,5 +1,5 @@
-defmodule PricelineWeb.ErrorView do
-  use PricelineWeb, :view
+defmodule PricefinderWeb.ErrorView do
+  use PricefinderWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

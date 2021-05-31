@@ -1,4 +1,4 @@
-defmodule PricelineWeb.ConnCaseHelper do
+defmodule PricefinderWeb.ConnCaseHelper do
   def render_json(view, template, assigns \\ %{}) do
     template
     |> view.render(assigns)

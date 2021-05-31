@@ -1,5 +1,5 @@
-defmodule PricelineWeb.CheapestOfferView do
-  use PricelineWeb, :view
+defmodule PricefinderWeb.CheapestOfferView do
+  use PricefinderWeb, :view
 
   def render("cheapest_offer.json", %{airline: airline, amount: amount}) do
     %{

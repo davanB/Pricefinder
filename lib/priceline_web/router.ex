@@ -1,11 +1,11 @@
-defmodule PricelineWeb.Router do
-  use PricelineWeb, :router
+defmodule PricefinderWeb.Router do
+  use PricefinderWeb, :router
 
   pipeline :api do
     plug :accepts, ["json"]
   end
 
-  scope "/", PricelineWeb do
+  scope "/", PricefinderWeb do
     pipe_through :api
 
     get "/findCheapestOffer", CheapestOfferController, :index

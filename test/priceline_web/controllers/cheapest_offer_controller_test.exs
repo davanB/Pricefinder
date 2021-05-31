@@ -1,11 +1,11 @@
 defmodule Pricefinder.CheapestOfferControllerTest do
-  use PricelineWeb.ConnCase
+  use PricefinderWeb.ConnCase
   import Mox
 
-  alias PricelineWeb.CheapestOfferView
-  alias PricelineWeb.ErrorView
+  alias PricefinderWeb.CheapestOfferView
+  alias PricefinderWeb.ErrorView
   alias Pricefinder.Validation.ParamValidator
-  alias PricelineWeb.ErrorHelpers
+  alias PricefinderWeb.ErrorHelpers
   alias Pricefinder.Clients.{MockAirFranceKLM, MockBritishAirways}
 
   setup :verify_on_exit!

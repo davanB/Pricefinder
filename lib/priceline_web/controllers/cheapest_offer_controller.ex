@@ -1,8 +1,8 @@
-defmodule PricelineWeb.CheapestOfferController do
-  use PricelineWeb, :controller
+defmodule PricefinderWeb.CheapestOfferController do
+  use PricefinderWeb, :controller
 
   alias Pricefinder.Validation.ParamValidator
-  alias PricelineWeb.ErrorHelpers
+  alias PricefinderWeb.ErrorHelpers
   alias Pricefinder.CheapestOffer
 
   def index(conn, params) do
@@ -22,7 +22,7 @@ defmodule PricelineWeb.CheapestOfferController do
       cs ->
         conn
         |> put_status(400)
-        |> put_view(PricelineWeb.ErrorView)
+        |> put_view(PricefinderWeb.ErrorView)
         |> render("400.json", message: ErrorHelpers.format_errors(cs))
     end
   end

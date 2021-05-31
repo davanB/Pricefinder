@@ -1,7 +1,7 @@
-defmodule PricelineWeb.CheapestOfferViewTest do
+defmodule PricefinderWeb.CheapestOfferViewTest do
   use ExUnit.Case
 
-  alias PricelineWeb.CheapestOfferView
+  alias PricefinderWeb.CheapestOfferView
 
   test "can render cheapest_offer.json" do
     json = CheapestOfferView.render("cheapest_offer.json", %{airline: :BA, amount: 10})

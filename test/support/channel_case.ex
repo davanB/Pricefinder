@@ -1,4 +1,4 @@
-defmodule PricelineWeb.ChannelCase do
+defmodule PricefinderWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule PricelineWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use PricelineWeb.ChannelCase, async: true`, although
+  by setting `use PricefinderWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,10 +21,10 @@ defmodule PricelineWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import PricelineWeb.ChannelCase
+      import PricefinderWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint PricelineWeb.Endpoint
+      @endpoint PricefinderWeb.Endpoint
     end
   end
 
