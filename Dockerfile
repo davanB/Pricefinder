@@ -35,7 +35,8 @@ USER nobody:nobody
 
 COPY --from=build --chown=nobody:nobody /app/_build/prod/rel/pricefinder ./
 
-ENV PORT 4000
+ENV PORT=4000
+EXPOSE 4000
 ENV HOME=/app
 
 CMD ["bin/pricefinder", "start"]
