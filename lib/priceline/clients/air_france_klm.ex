@@ -5,7 +5,8 @@ defmodule Pricefinder.Clients.AirFranceKLM do
   @content_type {"Content-Type", "text/xml"}
   @soap_action {"SOAPAction",
                 "\"http://www.af-klm.com/services/passenger/ProvideAirShopping/airShopping\""}
-  @api_key {"api_key", "mdug6d7y75e36vvpa487j5k7"}
+  # The actual client key cannot be shared
+  @api_key {"api_key", System.get_env("AIR_FRANCE_API_KEY")}
 
   @headers [@content_type, @soap_action, @api_key]
 

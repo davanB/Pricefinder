@@ -2,7 +2,8 @@ defmodule Pricefinder.Clients.BritishAirways do
   @behaviour Pricefinder.Clients.Client
 
   @endpoint "https://test.api.ba.com/selling-distribution/AirShopping/V2"
-  @client_key {"Client-Key", "czrzswga6x3gy3uutvfy9um2"}
+  # The actual client key cannot be shared
+  @client_key {"Client-Key", System.get_env("BRITISH_AIRWAYS_API_KEY")}
   @content_type {"Content-Type", "application/xml"}
   @soap_action {"Soapaction", "AirShoppingV01"}
 
